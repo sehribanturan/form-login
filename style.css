@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+:root{
+    --success:#34af03;
+    --error:#ec2929;
+}
+*{
+    box-sizing: border-box;
+
+}
+ body{
+    background-color: #f3f3f3;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+ }
+ .container{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgb(0, 0, 0,3);
+    width: 500px;
+ }
+ .h2{
+  text-align: center;
+  margin:20px;
+ }
+ .form{
+    padding: 30px 40px;
+ }
+ .form-control{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+ }
+ .form-control label{
+   color: #777;
+   display: block;
+   margin-bottom: 5px;
+
+ }
+ .form-control input{
+    border:2px solid #f0f0f0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size:14px;
+ }
+ .form-contol input:focus{
+  border-color: #777;
+ }
+ .form-control.success  input{
+    border-color:var(--success);
+ }
+ .form-control.error  input{
+    border-color:var(--error);
+ }
+ .form-control small{
+    color: var(--error);
+    position: absolute;
+  
+    left: 0;
+    visibility: hidden;
+ }
+ .form-control.error small{
+    visibility: visible;
+ }
+ .form button{
+    cursor: pointer;
+    background-color: #5971e6;
+    border:#3d5af1;
+    border-radius:5px ;
+    color:#fff;
+    font-size: 16px;
+    padding: 15px;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 10px;
+
+ }
